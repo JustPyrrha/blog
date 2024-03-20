@@ -37,5 +37,6 @@ export default defineConfig({
     },
     rewrites: {
         'blog/': 'blog/a-blog-appears.md'
-    }
+    },
+    lastUpdated: true
 })
