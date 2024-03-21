@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+title: "Py's Blog"
 hero:
   name: "Py's Blog"
   text: "Just a transbian on the internet"
@@ -9,9 +9,8 @@ hero:
   image:
     src: /bean.png
     alt: Pyrrha Bean art by Peachiipon
-#  actions:
-#    - theme: brand
-#      text: Blog
-#      link: /blog/a-blog-appears
+  actions:
+    - theme: brand
+      text: Blog
+      link: blog/a-blog-appears
 ---
-
