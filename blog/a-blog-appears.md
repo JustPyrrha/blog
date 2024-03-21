@@ -1,8 +1,8 @@
 ---
 title: A blog appears!
 
-tags:
-  - meta
+tag: 'meta'
+date: '2024-03-21T00:31:04.000+13:00'
 layout: 'doc'
 ---
 
@@ -23,7 +23,7 @@ You can find the source for this site on [GitHub](https://github.com/JustPyrrha/
 Both the Home art and the favicon were commissioned from Peachii!
 Go show them some love:
 - [Twitter/X](https://twitter.com/peachiipon)
-- [VGen/Commissions](https://vgen.co/peachiipon)
+- [VGen (Commissions)](https://vgen.co/peachiipon)
 
 
 Thanks for reading! Hopefully I'll be posting a lot more here soon!\

@@ -1,8 +1,11 @@
 {
-  "dependencies": {},
+  "dependencies": { "@vueuse/core": "^10.9.0" },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.0",
+    "@types/node": "^20.11.30",
     "vitepress": "^1.0.0-rc.45",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "x-satori": "^0.1.5"
   },
   "scripts": {
     "blog:dev": "vitepress dev",

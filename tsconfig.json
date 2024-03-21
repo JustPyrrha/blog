@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"],
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./.vitepress/*"]
+    },
+    "resolveJsonModule": true,
+    "types": ["vite/client", "@types/gtag.js"],
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "references": [{"path": "./tsconfig.node.json"}],
+  "exclude": ["**/node_modules/**", ".vitepress/dist/**"]
+}

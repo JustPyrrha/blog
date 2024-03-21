@@ -1,13 +1,18 @@
-import {defineConfig} from 'vitepress'
+import {defineConfig, loadEnv} from 'vitepress';
+
+import headConfig from "./config/headConfig";
+import generateOgImages from "./config/hooks/generateOgImages"
+import generateMeta from "./config/hooks/generateMeta";
+
+const env = loadEnv('', process.cwd());
+const hostname: string = env.VITE_HOSTNAME || 'http://localhost:5173';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Py's Blog",
     description: "Just a transbian on the internet.",
     lang: "en-NZ",
-    head: [
-        ['link', {rel: 'icon', href: '/icon.png'}]
-    ],
+    head: headConfig,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -38,5 +43,9 @@ export default defineConfig({
     rewrites: {
         'blog/': 'blog/a-blog-appears.md'
     },
-    lastUpdated: true
+    lastUpdated: true,
+    transformHead: async context => generateMeta(context, hostname),
+    buildEnd: async (context) => {
+        await generateOgImages(context)
+    }
 })
