@@ -12,7 +12,7 @@ const headConfig: HeadConfig[] = [
     ['meta', {name: 'twitter:site', content: '@JustPyrrha'}],
     ['meta', {name: 'twitter:creator', content: '@JustPyrrha'}],
 
-    ['meta', {property: 'og:site_name', content: 'Py\' Blog'}],
+    ['meta', {property: 'og:site_name', content: 'Py\'s Blog'}],
     ['meta', {property: 'og:description', content: 'Just a transbian on the internet.'}],
     ['meta', {property: 'og:locale', content: 'en_NZ'}],
     ['meta', {property: 'og:type', content: 'website'}]
